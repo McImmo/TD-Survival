@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Waypoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,7 @@ TagManager:
     locked: 0
   - name: Technical
     uniqueID: 2996525255
+    locked: 0
+  - name: Buildings
+    uniqueID: 795804251
     locked: 0

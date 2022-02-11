@@ -8,7 +8,14 @@ public class Enemy : MonoBehaviour{
     private Waypoint Wpoints;
 
     private int waypointIndex = 0;
-    public int hp = 100;
+    public float hp = 100;
+
+    public void TakeDamage(float x){
+        hp -= x;
+    }
+    public float GetHp(){
+        return hp;
+    }
 
     void Start(){
         

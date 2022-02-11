@@ -5,30 +5,38 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
 private float range;
-private float damage;
-private float timeBetweenShots; // in seconds
-private GameObject currentTarget;
+public float damage = 4f;
+public float timeBetweenShots = 2f; // in seconds
+private float cooldown;
+private Enemy currentTarget;
 
 private void Start()
 {
-    
+    cooldown = timeBetweenShots;
 }
 
 private void updateNearestEnemy()
 {
-
+    if(GameObject.FindGameObjectWithTag("Enemy") != null)
+currentTarget = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Enemy>();
 }
 
 private void shoot(){
         if (currentTarget != null)
         {
-            currentTarget.hp -= damage; 
+            currentTarget.TakeDamage(damage);
         }
 }
 
 
 private void Update()
 {
+    updateNearestEnemy();
+    cooldown -= Time.deltaTime;
+    if(cooldown <= 0){
     shoot();
+    cooldown = timeBetweenShots;
+    Debug.Log(currentTarget.GetHp());
+    }
 }
 }
