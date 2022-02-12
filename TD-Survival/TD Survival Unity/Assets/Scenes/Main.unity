@@ -5930,6 +5930,7 @@ MonoBehaviour:
   range: 20
   damage: 15
   timeBetweenShots: 1
+  currentTarget: {fileID: 0}
 --- !u!212 &770910138
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6007,7 +6008,7 @@ GameObject:
   - component: {fileID: 875775850}
   - component: {fileID: 875775851}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6066,7 +6067,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -25040,6 +25041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2024850430}
+  - component: {fileID: 2024850431}
   m_Layer: 0
   m_Name: Pivot
   m_TagString: Untagged
@@ -25062,6 +25064,21 @@ Transform:
   m_Father: {fileID: 770910139}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024850431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024850429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950eb6e04753a9942a31a0d67ff7a6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pivot: {fileID: 2024850430}
+  barrel: {fileID: 875775850}
+  tower: {fileID: 770910137}
 --- !u!1 &2083525483
 GameObject:
   m_ObjectHideFlags: 0

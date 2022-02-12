@@ -8,7 +8,7 @@ public class Tower : MonoBehaviour
 [SerializeField]private float damage = 20f;
 [SerializeField]private float timeBetweenShots = 1f; // in seconds
 private float nextTimeToShoot;
-private GameObject currentTarget;
+public GameObject currentTarget;
 
 private void Start()
 {
