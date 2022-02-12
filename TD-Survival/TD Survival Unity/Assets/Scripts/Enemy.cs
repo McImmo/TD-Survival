@@ -17,6 +17,10 @@ public class Enemy : MonoBehaviour{
         return hp;
     }
 
+    private void Awake()
+    {
+        Enemies.enemies.Add(gameObject);
+    }
     void Start(){
         
         Wpoints = GameObject.FindGameObjectWithTag("Waypoint").GetComponent<Waypoint>();
@@ -31,12 +35,18 @@ public class Enemy : MonoBehaviour{
                 waypointIndex++;
             }
             else{
-                Destroy(gameObject);
+                die();
             }
         }
 
         if(hp <= 0){
-            Destroy(gameObject);
+            die();
         }
+    }
+
+    private void die()
+    {
+        Enemies.enemies.Remove(gameObject);
+        Destroy(gameObject);
     }
 }
