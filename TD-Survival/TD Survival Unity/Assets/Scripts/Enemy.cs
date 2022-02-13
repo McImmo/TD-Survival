@@ -10,16 +10,18 @@ public class Enemy : MonoBehaviour{
     private int waypointIndex = 0;
     public float hp = 100;
 
+
     public void TakeDamage(float x){
         hp -= x;
     }
+
     public float GetHp(){
         return hp;
     }
 
     private void Awake()
     {
-        Enemies.enemies.Add(gameObject);
+        EnemiesInfo.enemies.Add(gameObject);
     }
     void Start(){
         
@@ -46,7 +48,7 @@ public class Enemy : MonoBehaviour{
 
     private void die()
     {
-        Enemies.enemies.Remove(gameObject);
+        EnemiesInfo.enemies.Remove(gameObject);
         Destroy(gameObject);
     }
 }
