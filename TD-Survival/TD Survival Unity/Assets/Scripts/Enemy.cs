@@ -5,6 +5,9 @@ using UnityEngine;
 public class Enemy : MonoBehaviour{
 
     public float speed = 5;
+
+    public Animator animator;
+
     private Waypoint Wpoints;
 
     private int waypointIndex = 0;
@@ -44,6 +47,12 @@ public class Enemy : MonoBehaviour{
         if(hp <= 0){
             die();
         }
+
+        Vector3 movement = (Wpoints.waypoints[waypointIndex].position - transform.position );
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     private void die()
