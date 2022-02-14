@@ -5,12 +5,12 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Transform playerT;
-    public IsVisible script;
+    //public IsVisible script;
     
     // Update is called once per frame
     void Update()
     {
-        if(script.GetVisible() == false)
+        //if(script.GetVisible() == false)
         {
             transform.position = playerT.position;
         }
