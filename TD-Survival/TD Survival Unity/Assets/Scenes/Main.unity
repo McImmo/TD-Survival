@@ -192,7 +192,6 @@ GameObject:
   - component: {fileID: 355958687}
   - component: {fileID: 355958686}
   - component: {fileID: 355958688}
-  - component: {fileID: 355958690}
   - component: {fileID: 355958689}
   m_Layer: 0
   m_Name: Player
@@ -337,20 +336,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -1}
   m_Size: {x: 0.8, y: 0.8}
   m_Direction: 0
---- !u!114 &355958690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355958683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434796808dae85a40877d571d591fcd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  visible: 0
-  camera: {fileID: 519420032}
 --- !u!1 &405161935
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,7 +377,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -408,20 +392,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
---- !u!114 &519420030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e45a9e24b4784cd47be9e75164c6f56d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerT: {fileID: 355958685}
-  script: {fileID: 355958690}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
