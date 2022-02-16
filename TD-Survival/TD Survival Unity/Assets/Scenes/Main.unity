@@ -6066,6 +6066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1097540859}
   - component: {fileID: 1097540860}
+  - component: {fileID: 1097540861}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -6138,6 +6139,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &1097540861
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097540858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
 --- !u!1 &1161446127
 GameObject:
   m_ObjectHideFlags: 0
@@ -24984,6 +25001,7 @@ GameObject:
   - component: {fileID: 1918999421}
   - component: {fileID: 1918999420}
   - component: {fileID: 1918999419}
+  - component: {fileID: 1918999422}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -25069,6 +25087,22 @@ Transform:
   m_Father: {fileID: 251830711}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1918999422
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918999418}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1, y: 1}
+  m_Direction: 0
 --- !u!1 &1953114001
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,24 +18,24 @@ public class Stone: MonoBehaviour
     {
         SHP -= SHPC;
     }
-    bool WStage1 = false;
-    bool WStage2 = false;
-    bool WStage3 = false;
+    bool SStage1 = false;
+    bool SStage2 = false;
+    bool SStage3 = false;
     private void Update()
     {
-        if (SHP < 75)
+        if (SStage1 = false && SHP < 75)
         {
-            WStage1 = true;
+            SStage1 = true;
             InventoryCounter.SetStoneAmount(StoneGained);
         }
-        if (SHP < 50)
+        if (SStage2 = false && SHP < 50)
         {
-            WStage2 = true;
+            SStage2 = true;
             InventoryCounter.SetStoneAmount(StoneGained);
         }
-        if (SHP < 25 )
+        if (SStage3 = false && SHP < 25 )
         {
-            WStage3 = true;
+            SStage3 = true;
             InventoryCounter.SetStoneAmount(StoneGained);
         }
         if (SHP <=0)

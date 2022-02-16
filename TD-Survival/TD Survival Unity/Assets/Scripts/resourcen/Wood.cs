@@ -23,17 +23,17 @@ public class Wood: MonoBehaviour
     bool WStage3 = false;
     private void Update()
     {
-        if (WHP < 75)
+        if ( WStage1 = false && WHP <= 75 )
         {
             WStage1 = true;
             InventoryCounter.SetWoodAmount(WoodGained);
         }
-        if (WHP < 50)
+        if (WStage2 = false && WHP <= 50 )
         {
             WStage2 = true;
             InventoryCounter.SetWoodAmount(WoodGained);
         }
-        if (WHP < 25 )
+        if (WStage3 = false && WHP <= 25 )
         {
             WStage3 = true;
             InventoryCounter.SetWoodAmount(WoodGained);
