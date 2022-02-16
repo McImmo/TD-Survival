@@ -14,26 +14,26 @@ public class Wood: MonoBehaviour
     {
         return WHP;
     }
-    private void WoodDMG (int WHPC)
+    public void WoodDMG (int dmg)
     {
-        WHP -= WHPC;
+        WHP -= dmg;
     }
     bool WStage1 = false;
     bool WStage2 = false;
     bool WStage3 = false;
     private void Update()
     {
-        if ( WStage1 = false && WHP <= 75 )
+        if ( WStage1 == false && WHP <= 75 )
         {
             WStage1 = true;
             InventoryCounter.SetWoodAmount(WoodGained);
         }
-        if (WStage2 = false && WHP <= 50 )
+        if (WStage2 == false && WHP <= 50 )
         {
             WStage2 = true;
             InventoryCounter.SetWoodAmount(WoodGained);
         }
-        if (WStage3 = false && WHP <= 25 )
+        if (WStage3 == false && WHP <= 25 )
         {
             WStage3 = true;
             InventoryCounter.SetWoodAmount(WoodGained);

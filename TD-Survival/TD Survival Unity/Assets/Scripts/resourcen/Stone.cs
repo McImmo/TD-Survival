@@ -14,26 +14,26 @@ public class Stone: MonoBehaviour
     {
         return SHP;
     }
-    private void StoneDMG (int SHPC)
+    public void StoneDMG (int dmg)
     {
-        SHP -= SHPC;
+        SHP -= dmg;
     }
     bool SStage1 = false;
     bool SStage2 = false;
     bool SStage3 = false;
     private void Update()
     {
-        if (SStage1 = false && SHP < 75)
+        if (SStage1 == false && SHP < 75)
         {
             SStage1 = true;
             InventoryCounter.SetStoneAmount(StoneGained);
         }
-        if (SStage2 = false && SHP < 50)
+        if (SStage2 == false && SHP < 50)
         {
             SStage2 = true;
             InventoryCounter.SetStoneAmount(StoneGained);
         }
-        if (SStage3 = false && SHP < 25 )
+        if (SStage3 == false && SHP < 25 )
         {
             SStage3 = true;
             InventoryCounter.SetStoneAmount(StoneGained);
