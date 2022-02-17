@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Wood: MonoBehaviour
 {
-    public int WHP = 100;
+    public float WHP = 100;
     private int WoodGained = 10;
     /*public void SetWHP (int WHPW)
     {
         WHP += WHPW;
     }*/
-    public int GetWHP ()
+    public float GetWHP ()
     {
         return WHP;
     }
-    public void WoodDMG (int dmg)
+    public void WoodDMG (float dmg)
     {
         WHP -= dmg;
     }

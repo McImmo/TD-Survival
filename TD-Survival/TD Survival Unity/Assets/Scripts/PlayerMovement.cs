@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
         //Input wird verarbeitet
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        //Das erste ding (z.B. Horizontal) wird auf den Wert der zweiten Variable (z.B. movement.x) gesetzt
+        //Erste String (z.B. Horizontal) wird auf den Wert der zweiten Variable (z.B. movement.x) gesetzt
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
