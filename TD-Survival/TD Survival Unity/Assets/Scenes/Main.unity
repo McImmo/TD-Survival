@@ -6081,6 +6081,8 @@ GameObject:
   - component: {fileID: 1097540859}
   - component: {fileID: 1097540860}
   - component: {fileID: 1097540861}
+  - component: {fileID: 1097540863}
+  - component: {fileID: 1097540862}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -6169,6 +6171,38 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &1097540862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097540858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f63e3c474420284ba54a6941449c032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  script: {fileID: 1097540863}
+  mouse: {x: 0, y: 0, z: 0}
+  mainCamera: {fileID: 519420031}
+  linksBtnDown: 0
+  damage: 50
+--- !u!114 &1097540863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097540858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45f71493aebba8e42b4a1e46a542b339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 100
+  ResourceGained: 10
+  Type: Stone
 --- !u!1 &1161446127
 GameObject:
   m_ObjectHideFlags: 0
@@ -25014,9 +25048,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1918999421}
   - component: {fileID: 1918999420}
-  - component: {fileID: 1918999419}
   - component: {fileID: 1918999422}
   - component: {fileID: 1918999423}
+  - component: {fileID: 1918999419}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -25033,10 +25067,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1918999418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f125c7d89ed8304790e6f623a6e3cb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 45f71493aebba8e42b4a1e46a542b339, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WHP: 100
+  HP: 100
+  ResourceGained: 10
+  Type: Wood
 --- !u!212 &1918999420
 SpriteRenderer:
   m_ObjectHideFlags: 0

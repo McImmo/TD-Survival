@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ResourcenAbbauen : MonoBehaviour
 {
-    public Wood script;
+    public Resourcen script;
     public Vector3 mouse;
     //public Collider2D collider;
     public Camera mainCamera;
     public bool linksBtnDown = false;
-    public float damage = 20f;
+    public float damage = 50f;
 
     // Update is called once per frame
     void Update()
@@ -25,7 +25,7 @@ public class ResourcenAbbauen : MonoBehaviour
             mouse = mainCamera.ScreenToWorldPoint(Input.mousePosition); //Gibt die position der maus
             if(IsInside(GetComponent<Collider2D>(), mouse))
             {
-                script.WoodDMG(damage * Time.fixedDeltaTime); //Zieht leben von der resource ab
+                script.DMG(damage * Time.fixedDeltaTime); //Zieht leben von der resource ab
             }
         } 
     }
