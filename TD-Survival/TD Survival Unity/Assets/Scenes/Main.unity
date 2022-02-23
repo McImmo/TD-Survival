@@ -281,6 +281,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1861928692}
+  playerP: {x: 0, y: 0, z: 0}
+  boundary: 450
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
