@@ -6257,7 +6257,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_Direction: 0
 --- !u!114 &1097540862
 MonoBehaviour:
@@ -6551,6 +6551,14 @@ PrefabInstance:
     - target: {fileID: 2457509588024718422, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457509588024718444, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
+      propertyPath: m_Size.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2457509588024718444, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
+      propertyPath: m_Size.y
+      value: 0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
@@ -25480,7 +25488,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_Direction: 0
 --- !u!114 &1918999423
 MonoBehaviour:
@@ -28991,7 +28999,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 2}
+  m_Size: {x: 0.01, y: 0.01}
   m_Direction: 0
 --- !u!1 &2122038846
 GameObject:
