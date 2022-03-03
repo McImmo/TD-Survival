@@ -188,8 +188,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 251830711}
-  - component: {fileID: 251830712}
-  - component: {fileID: 251830713}
   m_Layer: 0
   m_Name: Resourcen
   m_TagString: Untagged
@@ -213,40 +211,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &251830712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251830710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45f71493aebba8e42b4a1e46a542b339, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 100
-  ResourceGained: 10
-  Type: NA
-  player: {fileID: 2068769201}
-  playerM: {fileID: 1498012518}
---- !u!114 &251830713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251830710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f63e3c474420284ba54a6941449c032, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  script: {fileID: 251830712}
-  mainCamera: {fileID: 519420031}
-  damage: 50
-  player: {fileID: 2068769201}
-  playerM: {fileID: 1498012518}
 --- !u!1 &405161935
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,8 +281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1861928692}
-  playerP: {x: 0, y: 0, z: 0}
-  boundary: 0.45
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -346,7 +308,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 14.598282
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6174,10 +6136,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 1097540863}
+  mouse: {x: 0, y: 0, z: 0}
   mainCamera: {fileID: 519420031}
+  linksBtnDown: 0
   damage: 50
-  player: {fileID: 2068769201}
-  playerM: {fileID: 1498012518}
 --- !u!114 &1097540863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6193,8 +6155,6 @@ MonoBehaviour:
   HP: 100
   ResourceGained: 10
   Type: Stone
-  player: {fileID: 2068769201}
-  playerM: {fileID: 1498012518}
 --- !u!1 &1161446127
 GameObject:
   m_ObjectHideFlags: 0
@@ -6347,11 +6307,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2457509588024718416, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.19
+      value: 0.20000076
       objectReference: {fileID: 0}
     - target: {fileID: 2457509588024718416, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.01
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 2457509588024718416, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6385,36 +6345,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2457509588024718419, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
-      propertyPath: no
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2457509588024718419, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
-      propertyPath: abbauen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2457509588024718419, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
-      propertyPath: resource
-      value: 
-      objectReference: {fileID: 1918999418}
     - target: {fileID: 2457509588024718422, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2457509588024718419, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
---- !u!114 &1498012518 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4026111514115036670, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
-  m_PrefabInstance: {fileID: 1498012517}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068769201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 727bdbde3a4d6fd4fb9a0cff37027791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1569431142
 GameObject:
   m_ObjectHideFlags: 0
@@ -25568,8 +25504,8 @@ GameObject:
   - component: {fileID: 1918999421}
   - component: {fileID: 1918999420}
   - component: {fileID: 1918999422}
-  - component: {fileID: 1918999419}
   - component: {fileID: 1918999423}
+  - component: {fileID: 1918999419}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -25592,8 +25528,6 @@ MonoBehaviour:
   HP: 100
   ResourceGained: 10
   Type: Wood
-  player: {fileID: 2068769201}
-  playerM: {fileID: 1498012518}
 --- !u!212 &1918999420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25688,10 +25622,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 1918999419}
+  mouse: {x: 0, y: 0, z: 0}
   mainCamera: {fileID: 519420031}
+  linksBtnDown: 0
   damage: 50
-  player: {fileID: 2068769201}
-  playerM: {fileID: 1498012518}
 --- !u!1 &1953114001
 GameObject:
   m_ObjectHideFlags: 0
@@ -25722,7 +25656,6 @@ Transform:
   m_Father: {fileID: 121786884}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!114 &2014305978 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6769877518839193163, guid: 774a35cff59892a49bcfd09860a34005, type: 3}
@@ -25734,13 +25667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d02bb025d79594db61956e70d64b87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
---- !u!1 &2068769201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2457509588024718422, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
-  m_PrefabInstance: {fileID: 1498012517}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> 607e83668dddece86dd0a5c0c0d1a2c25a7068cd
 --- !u!1 &2083525483
 GameObject:
   m_ObjectHideFlags: 0
