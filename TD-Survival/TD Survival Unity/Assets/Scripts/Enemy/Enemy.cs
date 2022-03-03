@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour{
-
+    //public GameObject nexusObject;
+    public Nexus nexus;
     public float speed = 5;
     private Waypoint Wpoints;
     public Animator animator;
 
     private int waypointIndex = 0;
     public float hp = 100;
-
+    private int DamageDealt = 100;
 
     public void TakeDamage(float x){
         hp -= x;
@@ -23,9 +24,10 @@ public class Enemy : MonoBehaviour{
     private void Awake()
     {
         EnemiesInfo.enemies.Add(gameObject);
+        //nexus = nexusObject.GetComponent<Nexus>();
     }
     void Start(){
-        
+        //Debug.Log(nexus);
         Wpoints = GameObject.FindGameObjectWithTag("Waypoint").GetComponent<Waypoint>();
     }
 
@@ -38,7 +40,8 @@ public class Enemy : MonoBehaviour{
                 waypointIndex++;
             }
             else{
-                die();
+               die();
+               nexus.ReduceNexusHP(DamageDealt);
             }
         }
 

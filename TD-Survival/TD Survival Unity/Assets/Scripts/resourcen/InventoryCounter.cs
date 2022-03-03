@@ -9,6 +9,7 @@ public static class InventoryCounter
     public static void SetWoodAmount(int W)
     {
         WoodAmount += W; 
+        Debug.Log(WoodAmount);
     }
     public static int GetWoodAmount()
     {
