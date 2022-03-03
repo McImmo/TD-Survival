@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour{
 
+    public Nexus nexus;
     public float speed = 5;
     private Waypoint Wpoints;
     public Animator animator;
 
     private int waypointIndex = 0;
     public float hp = 100;
-
+    private int DamageDealt = 100;
 
     public void TakeDamage(float x){
         hp -= x;
@@ -39,6 +40,7 @@ public class Enemy : MonoBehaviour{
             }
             else{
                 die();
+                nexus.ReduceNexusHP(DamageDealt);
             }
         }
 
