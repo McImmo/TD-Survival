@@ -10,10 +10,6 @@ public class ResourcenAbbauen : MonoBehaviour
     public Camera mainCamera;
     public bool linksBtnDown = false;
     public float damage = 50f;
-    void Start()
-    {
-        Debug.Log(script);
-    }
 
     // Update is called once per frame
     void Update()

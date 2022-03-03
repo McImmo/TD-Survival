@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1958048284065092901}
   - component: {fileID: 1958048284065092898}
   - component: {fileID: 1958048284065092899}
-  - component: {fileID: 8896536180267448592}
+  - component: {fileID: 1958048284065092900}
   m_Layer: 0
   m_Name: RedEnemy
   m_TagString: Enemy
@@ -103,7 +103,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8896536180267448592
+--- !u!114 &1958048284065092900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,10 +112,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1958048284065092896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f888c17c7b89d504abbbf719f7670ad6, type: 3}
+  m_Script: {fileID: 11500000, guid: 1700bc03039a8c347984ad9f319fe657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nexus: {fileID: 0}
   speed: 3
   animator: {fileID: 1958048284065092899}
-  hp: 100
+  hp: 50
