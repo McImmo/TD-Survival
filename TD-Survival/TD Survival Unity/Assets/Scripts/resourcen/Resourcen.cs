@@ -7,6 +7,8 @@ public class Resourcen : MonoBehaviour
     public float HP = 100;
     public int ResourceGained = 10;
     public string Type = "NA";
+    public Object player;
+    public PlayerMovement playerM;
     /*public void SetHP (int HPW)
     {
         HP += HPW;
@@ -46,6 +48,7 @@ public class Resourcen : MonoBehaviour
         {
             if (Type == "Wood") InventoryCounter.SetWoodAmount(ResourceGained);
             if (Type == "Stone") InventoryCounter.SetStoneAmount(ResourceGained);
+            playerM.SetBautAb(false);
             Destroy(gameObject);
         }
     }
