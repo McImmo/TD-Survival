@@ -5,13 +5,15 @@ using UnityEngine;
 public class ResourcenAbbauen : MonoBehaviour
 {
     public Resourcen script;
-    Vector3 mouse;
+    public Vector3 mouse;
+    //public Collider2D collider;
     public Camera mainCamera;
-    bool linksBtnDown = false;
+    public bool linksBtnDown = false;
     public float damage = 50f;
-    public Object player;
-    public PlayerMovement playerM;
-    bool bautAb;
+    void Start()
+    {
+        Debug.Log(script);
+    }
 
     // Update is called once per frame
     void Update()
@@ -22,24 +24,19 @@ public class ResourcenAbbauen : MonoBehaviour
 
     void FixedUpdate()
     {
-        bautAb = playerM.GetBautAb();
         if(linksBtnDown) //Wurde die maus gedrückt
         {
             mouse = mainCamera.ScreenToWorldPoint(Input.mousePosition); //Gibt die position der maus
-            
             if(IsInside(GetComponent<Collider2D>(), mouse))
             {
                 script.DMG(damage * Time.fixedDeltaTime); //Zieht leben von der resource ab
-                bautAb = true;
             }
-        }
-        else bautAb = false;
-        playerM.SetBautAb(bautAb);
+        } 
     }
 
     //Überprüft ob point im collider c ist
     public static bool IsInside(Collider2D c, Vector3 point)
-    {
-        return c.OverlapPoint(point);
-    }
+        {
+            return c.OverlapPoint(point);
+        }
 }
