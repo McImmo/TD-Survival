@@ -38,4 +38,10 @@ public class PlayerMovement : MonoBehaviour
     {
         bautAb = set;
     }
+    
+    private Inventory inventory;
+
+    private void Awake(){
+        inventory = new Inventory();
+    }
 }
