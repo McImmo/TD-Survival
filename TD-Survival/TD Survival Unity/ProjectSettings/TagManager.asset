@@ -13,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Buildings
+  - Grass
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: Buildings
     uniqueID: 795804251
+    locked: 0
+  - name: BuildingTemplates
+    uniqueID: 2129578897
     locked: 0
