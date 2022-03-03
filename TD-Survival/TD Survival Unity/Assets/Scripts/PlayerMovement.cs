@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     public Animator animator;
     bool bautAb = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -20,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
         animator.SetBool("BautAb", bautAb);
-        //Debug.Log(abbauen.GetBautAb());
     }
 
     //Wird eine festgelegte Anzahl pro Sekunde aufgerufen
