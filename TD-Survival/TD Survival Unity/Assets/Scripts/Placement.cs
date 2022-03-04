@@ -12,32 +12,32 @@ public class Placement : MonoBehaviour
 
     private bool isAnObjectSelected = false;
 
-	// Use this for initialization
 	void Start ()
     {
-        selectableObjects[0] = null;
         selectedObjectInArray = 0;
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 spawnPos = new Vector2(Mathf.Round(mousePos.x), Mathf.Round(mousePos.y));
 
+        //Baumodus wird mit e aktiviert
 	    if (Input.GetKeyDown("e") && isAnObjectSelected == false)
         {
             currentlySelectedObject = (GameObject)Instantiate(selectableObjects[selectedObjectInArray], spawnPos, Quaternion.identity);
             isAnObjectSelected = true;
         }
-
-        if (Input.GetMouseButtonDown(1) && isAnObjectSelected == true)
+        
+        //Baumodus wird mit Rechtsklick beendet
+        if (Input.GetMouseButtonDown(1) && isAnObjectSelected == true) //Rechtsklick
         {
             Destroy(currentlySelectedObject);
             isAnObjectSelected = false;
             selectedObjectInArray = 0;
         }
 
+        //wenn der Baumodus aktiv ist kann zwischen unterhsciedlichen Gebaeuden hin und ger gescrollt werden
         if (Input.GetAxis("Mouse ScrollWheel") > 0 && isAnObjectSelected == true)
         {
             selectedObjectInArray++;

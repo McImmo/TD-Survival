@@ -27,15 +27,16 @@ public class Template : MonoBehaviour
             Vector2 mouseRay = Camera.main.ScreenToWorldPoint(transform.position);
             mousePos.x += 0.5f; //damit der Raycast trotzdem akkurat ist
             mousePos.y += 0.5f;
-            RaycastHit2D rayHit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, allTilesLayer); // Gebaeude darunter?
-            RaycastHit2D rayHit2 = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, Grass);
-           if (rayHit.collider == null)
+            RaycastHit2D rayHit = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, allTilesLayer); // GrassTile udn kein Gebaude darüber?
+            
+           if (rayHit.collider != null &&(rayHit.collider.gameObject.tag == "Grass"))
            {
-               Debug.Log("kein Gebaeude im Weg");
-               if(rayHit2.collider != null)
                {
                Instantiate(finalObject, transform.position, Quaternion.identity);
                }
+           }
+           else {
+               Debug.Log("Du kannst hier nicht bauen");
            }
         }
 }
