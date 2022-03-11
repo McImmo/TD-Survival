@@ -6,8 +6,10 @@ using UnityEngine.UI;
 public class UI_Inventory : MonoBehaviour
 {
     private Inventory inventory;
-    private Transform itemSlotContainer;
-    private Transform itemSlotTemplate;
+    [SerializeField] private Transform itemSlotContainer;
+    [SerializeField] private Transform itemSlotTemplate;
+
+
 
     void Awake(){
         itemSlotContainer = transform.Find("itemSlotContainer");

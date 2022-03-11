@@ -3,7 +3,9 @@ guid: 1732b4f74466d0e45a80cc44fc3b145d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - woodSprite: {fileID: 21300000, guid: 4ca25840d6370e84ea50bb33f2d1b687, type: 3}
+  - stoneSprite: {fileID: 21300000, guid: 2101c9d54eeeecc4c8a00425651aa382, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -8,7 +8,8 @@ public class HandleInventory : MonoBehaviour
 
     [SerializeField] private UI_Inventory uiInventory;
 
-    public void Awake(){
+    
+    void Awake(){
         inventory = new Inventory();
         uiInventory.SetInventory(inventory);
     }

@@ -577,7 +577,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130.00002, y: -250}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &605812928
@@ -25792,6 +25792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021276316}
   - component: {fileID: 2021276317}
+  - component: {fileID: 2021276318}
   m_Layer: 0
   m_Name: UI_Inventory
   m_TagString: Untagged
@@ -25832,6 +25833,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4718d072893f1ec40b5236c7996bcdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemSlotContainer: {fileID: 2092363110}
+  itemSlotTemplate: {fileID: 530697483}
+--- !u!114 &2021276318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021276315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1732b4f74466d0e45a80cc44fc3b145d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodSprite: {fileID: 21300000, guid: 4ca25840d6370e84ea50bb33f2d1b687, type: 3}
+  stoneSprite: {fileID: 21300000, guid: 2101c9d54eeeecc4c8a00425651aa382, type: 3}
 --- !u!1 &2068769201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2457509588024718422, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}
