@@ -190,6 +190,7 @@ GameObject:
   - component: {fileID: 251830711}
   - component: {fileID: 251830712}
   - component: {fileID: 251830713}
+  - component: {fileID: 251830714}
   m_Layer: 0
   m_Name: Resourcen
   m_TagString: Untagged
@@ -247,6 +248,22 @@ MonoBehaviour:
   damage: 50
   player: {fileID: 2068769201}
   playerM: {fileID: 1498012518}
+--- !u!70 &251830714
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251830710}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &405161935
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1861928692}
   playerP: {x: 0, y: 0, z: 0}
-  boundary: 0.5
+  boundary: 0.45
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
