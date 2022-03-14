@@ -28980,6 +28980,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 7366806714546855548, guid: 3fc998eb30956064794326855ab9a680, type: 3}
+      propertyPath: licht
+      value: 
+      objectReference: {fileID: 1736723654}
+    - target: {fileID: 7366806714546855548, guid: 3fc998eb30956064794326855ab9a680, type: 3}
       propertyPath: light
       value: 
       objectReference: {fileID: 1736723654}

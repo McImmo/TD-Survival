@@ -9,14 +9,14 @@ public class Spawner : MonoBehaviour
     private float spawnCooldown = 1;
     [SerializeField]
     private GameObject EnemyPrefab;
-    [SerializeField] private DayNightCycle light;
+    [SerializeField] private DayNightCycle licht;
 
     private bool TimeToSpawn(){
         return Time.time >= nextSpawnTime;
     }
 
     private void Spawn(){
-        if(light.GetIsNight)
+        if(licht.GetIsNight)
         {
             nextSpawnTime = Time.time + spawnCooldown;
             GameObject Enemy= Instantiate(EnemyPrefab, transform.position, transform.rotation);
