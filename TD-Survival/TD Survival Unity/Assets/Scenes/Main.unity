@@ -248,6 +248,8 @@ MonoBehaviour:
   damage: 50
   player: {fileID: 2068769201}
   playerM: {fileID: 1498012518}
+  playerT: {fileID: 1861928692}
+  abbauRadius: 2
 --- !u!70 &251830714
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -6173,7 +6175,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4898900526506622241, guid: c69279190ec5e644abe9965307ef599d, type: 3}
   m_Color: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
   m_FlipX: 0
@@ -6218,6 +6220,8 @@ MonoBehaviour:
   damage: 50
   player: {fileID: 2068769201}
   playerM: {fileID: 1498012518}
+  playerT: {fileID: 1861928692}
+  abbauRadius: 2
 --- !u!114 &1097540863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25475,7 +25479,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4287133104039682844, guid: c69279190ec5e644abe9965307ef599d, type: 3}
   m_Color: {r: 0, g: 1, b: 0.09951925, a: 1}
   m_FlipX: 0
@@ -25534,6 +25538,8 @@ MonoBehaviour:
   damage: 50
   player: {fileID: 2068769201}
   playerM: {fileID: 1498012518}
+  playerT: {fileID: 1861928692}
+  abbauRadius: 2
 --- !u!1 &1953114001
 GameObject:
   m_ObjectHideFlags: 0

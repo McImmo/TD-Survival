@@ -11,6 +11,8 @@ public class ResourcenAbbauen : MonoBehaviour
     public float damage = 50f;
     public Object player;
     public PlayerMovement playerM;
+    [SerializeField] private Transform playerT;
+    [SerializeField] private float abbauRadius = 2;
     bool bautAb;
 
     // Update is called once per frame
@@ -22,24 +24,40 @@ public class ResourcenAbbauen : MonoBehaviour
 
     void FixedUpdate()
     {
-        bautAb = playerM.GetBautAb();
-        if(linksBtnDown) //Wurde die maus gedrückt
+        Debug.Log(Vector3.Distance(playerT.position,transform.position));
+        if(Vector3.Distance(playerT.position,transform.position) < abbauRadius)
         {
-            mouse = mainCamera.ScreenToWorldPoint(Input.mousePosition); //Gibt die position der maus
-            
-            if(IsInside(GetComponent<Collider2D>(), mouse))
+            bautAb = playerM.GetBautAb();
+            if(linksBtnDown) //Wurde die maus gedrückt
             {
-                script.DMG(damage * Time.fixedDeltaTime); //Zieht leben von der resource ab
-                bautAb = true;
+                mouse = mainCamera.ScreenToWorldPoint(Input.mousePosition); //Gibt die position der maus
+            
+                if(IsInside(GetComponent<Collider2D>(), mouse))
+                {
+                    script.DMG(damage * Time.fixedDeltaTime); //Zieht leben von der resource ab
+                    bautAb = true;
+                }
             }
+            else bautAb = false;
+            playerM.SetBautAb(bautAb);
         }
-        else bautAb = false;
-        playerM.SetBautAb(bautAb);
     }
 
     //Überprüft ob point im collider c ist
     public static bool IsInside(Collider2D c, Vector3 point)
     {
         return c.OverlapPoint(point);
+    }
+
+    public bool IsPlayerClose()
+    {
+        Vector3 resource = transform.position;
+        Vector3 player = playerT.position;
+        bool isClose = false;
+        float deltaX = resource.x - player.x;
+        float deltaY = resource.y - player.y;
+        //Debug.Log(transform.position);// + "  /  " + (resource.x - abbauRadius) + "  ||  " + (resource.y + abbauRadius) + "  /  " + (resource.y - abbauRadius));
+        if((((int)deltaX)^2 + ((int)deltaY)^2) < ((int)abbauRadius^2)) isClose = true;
+        return isClose;
     }
 }
