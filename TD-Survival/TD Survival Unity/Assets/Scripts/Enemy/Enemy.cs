@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour{
-
     public float speed = 5;
     private Waypoint Wpoints;
     public Animator animator;
 
     private int waypointIndex = 0;
     public float hp = 100;
+    private int schaden = 10;
 
 
     public void TakeDamage(float x){
@@ -39,6 +39,7 @@ public class Enemy : MonoBehaviour{
             }
             else{
                 die();
+                FindObjectOfType<Nexus>().ReduceNexusHP(schaden);
             }
         }
 
