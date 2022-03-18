@@ -29,4 +29,5 @@ public class DayNightCycle : MonoBehaviour
         time += Time.deltaTime;
         GetComponent<Light2D>().color = lightColor.Evaluate(time * 1/cycleTime);
     }
+
 }
