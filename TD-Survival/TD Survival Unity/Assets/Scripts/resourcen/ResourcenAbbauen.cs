@@ -24,7 +24,7 @@ public class ResourcenAbbauen : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(Vector3.Distance(playerT.position,transform.position));
+        //Debug.Log(Vector3.Distance(playerT.position,transform.position));
         if(Vector3.Distance(playerT.position,transform.position) < abbauRadius)
         {
             bautAb = playerM.GetBautAb();

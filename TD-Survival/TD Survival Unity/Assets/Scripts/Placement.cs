@@ -15,7 +15,7 @@ public class Placement : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        selectableObjects[0] = null;
+        
         selectedObjectInArray = 0;
 	}
 	
@@ -27,8 +27,17 @@ public class Placement : MonoBehaviour
 
 	    if (Input.GetKeyDown("e") && isAnObjectSelected == false)
         {
+              if(selectableObjects[selectedObjectInArray] == null)
+            {
+                Debug.Log("ausgewaehltes Objekt = null");
+            }
+            else
+            {
             currentlySelectedObject = (GameObject)Instantiate(selectableObjects[selectedObjectInArray], spawnPos, Quaternion.identity);
             isAnObjectSelected = true;
+            }
+            
+
         }
 
         if (Input.GetMouseButtonDown(1) && isAnObjectSelected == true)

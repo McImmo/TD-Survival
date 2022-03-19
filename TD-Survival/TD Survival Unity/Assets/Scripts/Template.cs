@@ -31,11 +31,11 @@ public class Template : MonoBehaviour
             RaycastHit2D rayHit2 = Physics2D.Raycast(mousePos, Vector2.zero, Mathf.Infinity, Grass);
            if (rayHit.collider == null)
            {
-               Debug.Log("kein Gebaeude im Weg");
-               if(rayHit2.collider != null)
-               {
-               Instantiate(finalObject, transform.position, Quaternion.identity);
-               }
+                Debug.Log("kein Gebaeude im Weg");
+                if(rayHit2.collider != null)
+                {
+                Instantiate(finalObject, transform.position, Quaternion.identity);
+                }
            }
         }
 }
