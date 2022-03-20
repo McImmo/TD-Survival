@@ -6413,6 +6413,7 @@ GameObject:
   - component: {fileID: 1097540861}
   - component: {fileID: 1097540863}
   - component: {fileID: 1097540862}
+  - component: {fileID: 1097540864}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -6535,6 +6536,19 @@ MonoBehaviour:
   Type: Stone
   player: {fileID: 2068769201}
   playerM: {fileID: 1498012518}
+--- !u!114 &1097540864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097540858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6932af0e8e5304a8e86e785c0eee17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SHP: 100
 --- !u!1 &1161446127
 GameObject:
   m_ObjectHideFlags: 0
@@ -25793,6 +25807,7 @@ GameObject:
   - component: {fileID: 2021276316}
   - component: {fileID: 2021276317}
   - component: {fileID: 2021276318}
+  - component: {fileID: 2021276319}
   m_Layer: 0
   m_Name: UI_Inventory
   m_TagString: Untagged
@@ -25847,8 +25862,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1732b4f74466d0e45a80cc44fc3b145d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pfItemWorld: {fileID: 0}
   woodSprite: {fileID: 21300000, guid: 4ca25840d6370e84ea50bb33f2d1b687, type: 3}
   stoneSprite: {fileID: 21300000, guid: 2101c9d54eeeecc4c8a00425651aa382, type: 3}
+--- !u!114 &2021276319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021276315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fe2aa7221def304abef9f097564a4ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2068769201 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2457509588024718422, guid: 9aa1f38401a60c24bbafd9ef75884f45, type: 3}

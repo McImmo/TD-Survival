@@ -10,6 +10,9 @@ public class UI_Inventory : MonoBehaviour
     [SerializeField] private Transform itemSlotTemplate;
 
 
+    void Update(){
+
+    }
 
     void Awake(){
         itemSlotContainer = transform.Find("itemSlotContainer");

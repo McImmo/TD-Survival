@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item
-{
+{    
     public enum ItemType{
         Wood,
         Stone

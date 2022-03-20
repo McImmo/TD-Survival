@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resourcen : MonoBehaviour
 {
     public float HP = 100;
-    public int ResourceGained = 10;
+    public int ResourceGained = 1;
     public string Type = "NA";
     public Object player;
     public PlayerMovement playerM;
