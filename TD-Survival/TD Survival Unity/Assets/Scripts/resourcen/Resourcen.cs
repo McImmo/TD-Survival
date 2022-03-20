@@ -9,6 +9,7 @@ public class Resourcen : MonoBehaviour
     public string Type = "NA";
     public Object player;
     public PlayerMovement playerM;
+    public ResourcenSpawner spawner;
     /*public void SetHP (int HPW)
     {
         HP += HPW;
@@ -48,6 +49,7 @@ public class Resourcen : MonoBehaviour
         {
             if (Type == "Wood") InventoryCounter.SetWoodAmount(ResourceGained);
             if (Type == "Stone") InventoryCounter.SetStoneAmount(ResourceGained);
+            spawner.SetAbgebaut(true);
             playerM.SetBautAb(false);
             Destroy(gameObject);
         }
