@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Stone: MonoBehaviour
 {
-
     public int SHP = 100;
     private int StoneGained = 10;
     /*public void SetSHP (int SHPW)
@@ -43,7 +42,6 @@ public class Stone: MonoBehaviour
         {
             InventoryCounter.SetStoneAmount(StoneGained);
             Destroy(gameObject);
-            //Inventory.AddItem(new Item {itemType = Item.ItemType.Stone, amount = 1});
         }
     }
 }

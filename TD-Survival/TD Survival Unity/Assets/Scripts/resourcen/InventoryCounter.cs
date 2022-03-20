@@ -8,7 +8,7 @@ public static class InventoryCounter
     public static int StoneAmount = 0;
     public static void SetWoodAmount(int W)
     {
-        WoodAmount += W;
+        WoodAmount += W; 
     }
     public static int GetWoodAmount()
     {

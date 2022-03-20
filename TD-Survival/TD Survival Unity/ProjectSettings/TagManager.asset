@@ -10,8 +10,6 @@ TagManager:
   - Waypoint2
   - Waypoint3
   - Waypoint4
-  - Container
-  - Template
   layers:
   - Default
   - TransparentFX
@@ -54,7 +52,4 @@ TagManager:
     locked: 0
   - name: Buildings
     uniqueID: 795804251
-    locked: 0
-  - name: Inventory
-    uniqueID: 1732612125
     locked: 0
