@@ -24,12 +24,15 @@ private void updateNearestEnemy()
     float distance = Mathf.Infinity;
 
     foreach(GameObject enemy in EnemiesInfo.enemies){
+        if(enemy != null)
+        {
         float _distance = (transform.position - enemy.transform.position).magnitude;
 
         if (_distance < distance){
             distance = _distance;
             currentNearestEnemy = enemy;
 
+        }
         }
     }
 

@@ -16,11 +16,11 @@ public class Spawner : MonoBehaviour
     }
 
     private void Spawn(){
-        if(licht.GetIsNight)
-        {
+        //if(licht.GetIsNight)
+        //{
             nextSpawnTime = Time.time + spawnCooldown;
             GameObject Enemy= Instantiate(EnemyPrefab, transform.position, transform.rotation);
-        }
+        //}
     }
     void Update()
     {

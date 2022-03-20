@@ -7,6 +7,9 @@ TagManager:
   - Waypoint
   - Enemy
   - GrassTile
+  - Waypoint2
+  - Waypoint3
+  - Waypoint4
   layers:
   - Default
   - TransparentFX
