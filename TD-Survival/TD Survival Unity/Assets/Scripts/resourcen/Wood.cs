@@ -5,7 +5,7 @@ using UnityEngine;
 public class Wood: MonoBehaviour
 {
     public float WHP = 100;
-    private int WoodGained = 10;
+    private int WoodGained = 1;
     /*public void SetWHP (int WHPW)
     {
         WHP += WHPW;

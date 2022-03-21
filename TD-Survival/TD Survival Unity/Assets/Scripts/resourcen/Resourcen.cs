@@ -14,6 +14,11 @@ public class Resourcen : MonoBehaviour
     {
         HP += HPW;
     }*/
+
+    private void Start()
+    {
+        ResourceGained = 1;
+    }
     public float GetHP ()
     {
         return HP;

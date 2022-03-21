@@ -5,7 +5,7 @@ using UnityEngine;
 public class Stone: MonoBehaviour
 {
     public int SHP = 100;
-    private int StoneGained = 10;
+    private int StoneGained = 1;
     /*public void SetSHP (int SHPW)
     {
         SHP += SHPW;

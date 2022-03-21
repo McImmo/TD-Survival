@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField]
+
     private float damage = 20f;
 
     private void Start()
@@ -17,14 +17,11 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other)
-    {
-        
+    { 
         if(other.gameObject.tag == "Enemy")  
         {
-            Debug.Log("gegner kassiert " + damage);
             other.gameObject.GetComponent<Enemy>().TakeDamage(damage);
             Destroy(gameObject);
         }
-
     }
 }
