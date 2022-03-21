@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1298442041
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 1, g: 0, b: 0.922585, a: 1}
@@ -95,6 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8317be84bc5456d4bae60c2bb31deaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnCooldown: 0.4
+  alleNTage: 1
+  ersterTag: 0
+  letzterTag: 100
+  spawnCooldown: 2
   EnemyPrefab: {fileID: 1958048284065092896, guid: f526eb2330695474e8afcfca004918c3, type: 3}
   licht: {fileID: 0}

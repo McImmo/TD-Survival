@@ -22,7 +22,7 @@ public class DayNightCycle : MonoBehaviour
             nights++;
         }
 
-        if((int)time == cycleTime/2) isNight = true;
+        if(((int)time >= cycleTime/2) && ((time < cycleTime*0.95f))) isNight = true;
 
         if(time > cycleTime*0.95f) isNight = false;
         
