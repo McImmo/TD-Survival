@@ -21,6 +21,11 @@ public class DayNightCycle : MonoBehaviour
             time = 0;
             nights++;
         }
+        
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            time = cycleTime * 0.45f;
+        }
 
         if(((int)time >= cycleTime/2) && ((time < cycleTime*0.95f))) isNight = true;
 
