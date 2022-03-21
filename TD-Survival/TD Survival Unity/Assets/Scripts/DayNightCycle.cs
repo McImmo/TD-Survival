@@ -9,7 +9,7 @@ public class DayNightCycle : MonoBehaviour
 
     private int nights;
     public int Nights => nights;
-    public float time = 50;
+    public float time = 0;
     public int cycleTime = 120;
     private bool isNight = false;
     public bool GetIsNight => isNight;
