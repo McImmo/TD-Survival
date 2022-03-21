@@ -47,15 +47,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1214149755
+  - name: Path
+    uniqueID: 1583073155
     locked: 0
   - name: Technical
     uniqueID: 2996525255
     locked: 0
+  - name: Buildings
+    uniqueID: 795804251
+    locked: 0
+  - name: Player
+    uniqueID: 1214149755
+    locked: 0
   - name: Nexus
     uniqueID: 2766111727
     locked: 0
-  - name: Buildings
-    uniqueID: 795804251
+  - name: Minimap
+    uniqueID: 2228879815
     locked: 0
