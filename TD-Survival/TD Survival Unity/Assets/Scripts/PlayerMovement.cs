@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", movement.sqrMagnitude);
         animator.SetBool("BautAb", bautAb);
         //Debug.Log(abbauen.GetBautAb());
-        if(Input.GetKey(KeyCode.LeftShift)) moveSpeed = 10f;
+        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) moveSpeed = 10f;
         else moveSpeed = 5f;
     }
 
