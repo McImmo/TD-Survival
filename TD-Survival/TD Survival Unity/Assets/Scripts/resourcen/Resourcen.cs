@@ -5,7 +5,7 @@ using UnityEngine;
 public class Resourcen : MonoBehaviour
 {
     public float HP = 100;
-    public int ResourceGained = 10;
+    public int ResourceGained = 1;
     public string Type = "NA";
     public Object player;
     public PlayerMovement playerM;
@@ -22,12 +22,12 @@ public class Resourcen : MonoBehaviour
     {
         HP -= dmg;
     }
-    bool Stage1 = false;
-    bool Stage2 = false;
-    bool Stage3 = false;
+    //bool Stage1 = false;
+    //bool Stage2 = false;
+    //bool Stage3 = false;
     private void Update()
     {
-        if (Stage1 == false && HP <= 75 )
+        /**if (Stage1 == false && HP <= 75 )
         {
             Stage1 = true;
             if (Type == "Wood") InventoryCounter.SetWoodAmount(ResourceGained);
@@ -44,7 +44,7 @@ public class Resourcen : MonoBehaviour
             Stage3 = true;
             if (Type == "Wood") InventoryCounter.SetWoodAmount(ResourceGained);
             if (Type == "Stone") InventoryCounter.SetStoneAmount(ResourceGained);
-        }
+        }**/
         if (HP <=0)
         {
             if (Type == "Wood") InventoryCounter.SetWoodAmount(ResourceGained);
