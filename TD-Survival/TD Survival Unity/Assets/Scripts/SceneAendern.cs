@@ -12,6 +12,22 @@ public class SceneAendern : MonoBehaviour
     
     public void home()
     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
+
+    public void exit()
+    {
+        Debug.Log("EXIT");
+        Application.Quit();
+    }
+
+    public void steuerung()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+    }
+
+    public void home2()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
 }

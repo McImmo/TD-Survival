@@ -15,14 +15,13 @@ public class CameraMovement : MonoBehaviour
     {
         
         transform.position = player.position;
-        width = GetComponent<Camera>().pixelWidth * boundary;
-        height = GetComponent<Camera>().pixelHeight * boundary;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        width = GetComponent<Camera>().pixelWidth * boundary;
+        height = GetComponent<Camera>().pixelHeight * boundary;
         Vector3 move = new Vector3(0,0,0);
         playerP = GetComponent<Camera>().WorldToScreenPoint(player.position);
         if(playerP.y < height) 
