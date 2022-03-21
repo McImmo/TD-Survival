@@ -19,7 +19,6 @@ public class Spawner : MonoBehaviour
     private GameObject EnemyPrefab;
     [SerializeField] private DayNightCycle licht;
 
-    private bool pauseVorbei = false;
     private float time;
 
     private bool TimeToSpawn(){

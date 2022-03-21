@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour{
     {
         EnemiesInfo.enemies.Add(gameObject);
     }
-    async void Start(){
+    private void Start(){
         
         //vergleicht die seine Distanz zu den ersten Waypoints der 4 Pfade. Er deklariert "Wpoints" als den Pfad dessen Startpunkt ma naechsten ist
         Transform Start1 = GameObject.FindGameObjectWithTag("Waypoint").GetComponent<Waypoint>().waypoints[0];
@@ -84,9 +84,12 @@ public class Enemy : MonoBehaviour{
 
         Vector3 movement = (Wpoints.waypoints[waypointIndex].position - transform.position );
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        if(animator != null)
+        {
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
     }
 
     private void die()
