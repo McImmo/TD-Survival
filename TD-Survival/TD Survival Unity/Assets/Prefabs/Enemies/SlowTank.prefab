@@ -48,6 +48,7 @@ MonoBehaviour:
   speed: 2
   animator: {fileID: 0}
   hp: 150
+  schaden: 15
 --- !u!212 &4893462371700546121
 SpriteRenderer:
   m_ObjectHideFlags: 0

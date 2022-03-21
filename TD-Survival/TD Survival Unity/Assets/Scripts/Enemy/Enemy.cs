@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour{
 
     private int waypointIndex = 0;
     public float hp = 100;
-    private int schaden = 10;
+    [SerializeField] private int schaden = 10;
 
 
 
