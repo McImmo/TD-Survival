@@ -10,9 +10,4 @@ public class errorTemplate : MonoBehaviour
         Destroy(gameObject, 0.4f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
