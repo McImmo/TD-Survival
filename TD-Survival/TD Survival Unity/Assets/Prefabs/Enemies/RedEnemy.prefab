@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1958048284065092898}
   - component: {fileID: 1958048284065092899}
   - component: {fileID: 1958048284065092900}
+  - component: {fileID: 3307433297588535446}
   m_Layer: 0
   m_Name: RedEnemy
   m_TagString: Enemy
@@ -118,3 +119,19 @@ MonoBehaviour:
   speed: 4
   animator: {fileID: 1958048284065092899}
   hp: 50
+--- !u!70 &3307433297588535446
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958048284065092896}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03355503, y: 0}
+  m_Size: {x: 1.1946507, y: 2}
+  m_Direction: 0
