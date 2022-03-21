@@ -50,12 +50,14 @@ public class Spawner : MonoBehaviour
 
     private bool AktiverTag()
     {
-        if(Time.time < ersterTag*licht.cycleTime) return false; //guckt ob der Erste Tag erreicht wurde
+        if(Time.time < ersterTag*licht.cycleTime){ //guckt ob der erste Tag erreicht wurde
+            return false;
+        } 
         LetzterTag();
             
         //guckt ob die angegebene Pause eingehalten wurde
         float mod = time % (alleNTage*licht.cycleTime);
-        if(mod <= licht.cycleTime)
+        if((mod <= licht.cycleTime) && (!LetzterTag()))
         {
         return true;
         }
@@ -65,9 +67,13 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void LetzterTag()
+    private bool LetzterTag()
     {
-        if(Time.time > letzterTag*licht.cycleTime) Destroy(gameObject);
+        if(time > letzterTag*licht.cycleTime){
+            Destroy(gameObject);
+            return true;
+        } 
+        else return false;
         /*am letzten Tag wird der Spawner zerstoert
         * Man kann also beispielsweise 5 Tage lang eine bestimmte Art Welle schicken und dann aufhoeren, weil ja der Spawner zerstoert ist.
         */
