@@ -18,11 +18,12 @@ public class DayNightCycle : MonoBehaviour
     {
         if(time > cycleTime)
         {
+            Debug.Log(nights);
             time = 0;
             nights++;
         }
         
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) && isNight == false)
         {
             time = cycleTime * 0.45f;
         }
