@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a2445024f2034284f8f687bd65edd500
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - currentTarget: {instanceID: 0}
+  - pivot: {instanceID: 0}
+  - barrel: {instanceID: 0}
+  - projectile: {fileID: 5942506870263348504, guid: cd6f45e22073725478075fb040e671e4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
