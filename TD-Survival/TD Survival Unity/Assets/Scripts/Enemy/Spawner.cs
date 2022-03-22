@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
-        time = licht.time + ersterTag*licht.cycleTime;
+        time = licht.time;
     }
 
     private void Spawn(){
