@@ -7,7 +7,7 @@ public class BarrelRotation : MonoBehaviour
     public Transform pivot;
     public Transform barrel;
 
-    public ShotgunTower tower;
+    public Tower tower;
     void Update()
     {
         if(tower != null){
